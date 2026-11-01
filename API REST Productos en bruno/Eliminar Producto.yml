@@ -1,0 +1,28 @@
+info:
+  name: Eliminar Producto
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: http://localhost:3000/api/productos/3
+  body:
+    type: json
+    data: |-
+      {
+        "mensaje": "Producto eliminado correctamente",
+        "producto": {
+          "id": 1,
+          "nombre": "Mouse gamer actualizado",
+          "precio": 400,
+          "stock": 20
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,24 @@
+info:
+  name: Registrar producto
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/api/productos
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Mouse gamer",
+        "precio": 350,
+        "stock": 15
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

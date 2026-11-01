@@ -1,0 +1,16 @@
+info:
+  name: Consultar libros
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "\thttp://127.0.0.1:8000/libros"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
